@@ -9,8 +9,19 @@ canvas {
 	border: 2px solid black
 }
 
+#headerDiv {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
 #canvasDiv {
 	margin-left: auto;
 	margin-right: auto;
 	width: 600px;
+}
+
+h1 {
+	font-family: 'Ubuntu Mono', sans-serif;
+	text-align: center;
 }
