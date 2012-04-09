@@ -1,0 +1,16 @@
+/*
+Billy Mills
+CSCI 242
+proj1p2.css
+April 9, 2012
+*/
+
+canvas {
+	border: 2px solid black
+}
+
+#canvasDiv {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
