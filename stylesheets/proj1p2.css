@@ -6,13 +6,14 @@ April 9, 2012
 */
 
 canvas {
+
 	border: 2px solid black
 }
 
 #headerDiv {
 	margin-left: auto;
 	margin-right: auto;
-	width: 300px;
+	width: 600px;
 }
 
 #canvasDiv {
@@ -21,7 +22,8 @@ canvas {
 	width: 600px;
 }
 
-h1 {
+h1,h3,h4 {
 	font-family: 'Ubuntu Mono', sans-serif;
 	text-align: center;
+	padding: 0px;
 }
