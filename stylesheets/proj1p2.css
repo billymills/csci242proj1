@@ -6,8 +6,13 @@ April 9, 2012
 */
 
 canvas {
-
 	border: 2px solid black
+}
+
+#headerCanvasDiv {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
 }
 
 #headerDiv {
