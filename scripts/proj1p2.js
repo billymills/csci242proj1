@@ -1,3 +1,10 @@
+/*
+Billy Mills
+CSCI 242
+proj1p2.js
+April 23, 2012
+*/
+
 window.onload = init;
 
 function init() {
@@ -8,6 +15,8 @@ function init() {
 	var myCanvasContext = myCanvas.getContext("2d");
 	//call function to draw grid
 	drawGrid(myCanvas, myCanvasContext);
+	//call function to add times
+	drawTimes(myCanvas, myCanvasContext);
 	
 	//code for header canvas
 	var headerCanvas = document.getElementById("headerCanvasDiv");
@@ -16,13 +25,6 @@ function init() {
 	var myHeaderCtx = myHeaderCanvas.getContext("2d");
 	//call function to display days of the week
 	drawLabel(myHeaderCanvas, myHeaderCtx);
-	
-	//code for side cavas
-	//var sideCanvas = document.getElementById("sideCanvasDiv");
-	//sideCanvas.innerHTML = "<canvas width='120' height='400' id='mySideCanvas'></canvas>";
-	//var mySideCanvas = document.getElementById("mySideCanvas");
-	//var mySideCtx = mySideCanvas.getContext("2d");
-	
 } //end init
 
 function drawGrid(myCanvas, myCtx) {
@@ -59,3 +61,18 @@ function drawLabel(myCanvas, myCtx) {
 		x= x + 120;
 	}; //end for loop
 } //end drawLabel
+
+function drawTimes(myCanvas, myCtx) {
+	var timeArray = new Array("8:00am-9:00am", "9:00am-10:00am","10:00am-11:00am","11:00am-12:00pm",
+								"12:00pm-1:00pm","1:00pm-2:00pm","2:00pm-3:00pm","3:00pm-4:00pm",
+								"4:00pm-5:00pm","5:00pm-6:00pm");
+	var y = 20;
+	for(i=0;i<10;i++) {
+		myCtx.fillStyle = "black"
+		myCtx.font = "bold 15px sans-serif";
+		myCtx.textAlign = "center";
+		myCtx.textBaseline = "middle";
+		myCtx.fillText(timeArray[i], 60, y);
+		y = y + 40;
+	}; //end for loop
+} //end drawTimes
