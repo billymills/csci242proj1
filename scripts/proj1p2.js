@@ -50,6 +50,8 @@ function drawGrid(myCanvas, myCtx) {
 } //end drawGrid
 
 function drawLabel(myCanvas, myCtx) {
+	myCtx.fillStyle = "#c6ccd3";
+	myCtx.fillRect(0, 0, 720, 40);
 	var daysArray = new Array("Times", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday");
 	var x = 60;
 	for(i=0; i<6; i++) {
@@ -63,13 +65,13 @@ function drawLabel(myCanvas, myCtx) {
 } //end drawLabel
 
 function drawTimes(myCanvas, myCtx) {
-	var timeArray = new Array("8:00am-9:00am", "9:00am-10:00am","10:00am-11:00am","11:00am-12:00pm",
-								"12:00pm-1:00pm","1:00pm-2:00pm","2:00pm-3:00pm","3:00pm-4:00pm",
-								"4:00pm-5:00pm","5:00pm-6:00pm");
+	var timeArray = new Array("8.00a-9.00a", "9.00a-10.00a","10.00a-11.00a","11.00a-12.00p",
+								"12.00p-1.00p","1.00p-2.00p","2.00p-3.00p","3.00p-4.00p",
+								"4.00p-5.00p","5.00p-6.00p");
 	var y = 20;
 	for(i=0;i<10;i++) {
 		myCtx.fillStyle = "black"
-		myCtx.font = "bold 15px sans-serif";
+		myCtx.font = "bold 12px sans-serif";
 		myCtx.textAlign = "center";
 		myCtx.textBaseline = "middle";
 		myCtx.fillText(timeArray[i], 60, y);
